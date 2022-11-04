@@ -1,0 +1,12 @@
+/* p: selector 
+color: purple --> declaration
+color --> property
+red --> property value
+*/
+
+/* https://jigsaw.w3.org/css-validator/#validate_by_upload */
+
+p {
+  font-size: 64px;
+  color: purple;
+}

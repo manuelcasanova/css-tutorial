@@ -1,0 +1,43 @@
+/* Universal selector */
+/* * {
+  font-family: monospace;
+} */
+
+
+body {
+  font-size: 22px;
+}
+
+/* Looks for h1 and h2 */
+h1, h2 {
+  color: blue;
+}
+
+/* Looks for h2 in h1 */
+h1 h2 {
+  color: blue;
+}
+
+p {
+  color: purple
+}
+
+/* Cascade. Whichever definition reads at last, will be used, unless it has more specificity inline id (#) classes (.something) elements (h1) */
+p {
+  color: red
+}
+
+/* If no comma between p and span, looks for spans inside p*/
+p span {
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+.gray {
+  color: gray;
+}
+
+/* Id's should be unique.Anyways, classes are preferred */
+#second {
+  font-style: italic;
+}

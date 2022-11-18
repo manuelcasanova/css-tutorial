@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.block {
+  width: 30vw;
+  height: 30vw;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.clear {
+  clear: both /*right, or left, are options*/
+}
+
+section {
+  background-color: aqua;
+  border: 1px solid black;
+  padding: 1rem;
+  /*Get the container to extend all the way and contain the element that is floated. SORT OF LEGACY*/
+  /* overflow: auto;  */
+  /*Modern way:*/
+  display: flow-root;
+}
+
+/*IMPORTANT. We can use floats inside a container but remember to apply display: flow-root to the container, so it does not shrink based on the text content alone.*/
